@@ -1,0 +1,18 @@
+.App {
+    margin: 0 auto;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    background-color: rgb(76, 76, 76);
+    color: whitesmoke;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 2%;
+}
+
+@media only screen and (max-width: 900px) {
+    .App {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

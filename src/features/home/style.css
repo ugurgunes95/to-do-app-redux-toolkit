@@ -1,0 +1,162 @@
+.todos {
+    min-height: 80vh;
+    max-height: 80vh;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px #666966;
+    background-color: #222931;
+    overflow-y: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%
+}
+
+.todo {
+    width: 100%;
+    min-height: 20vh;
+    max-height: 20vh;
+    border-radius: 10px;
+    background-color: transparent;
+    overflow: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #666966;
+    transition-duration: 0.3s;
+    animation-name: todo-animation;
+    animation-duration: 1.5s;
+}
+
+@keyframes todo-animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #939090;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(67, 66, 66);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(39, 35, 35);
+}
+
+.icon {
+    cursor: pointer;
+}
+
+.edit-container {
+    position: absolute;
+    width: 90%;
+    top: 15%;
+    left: 5%;
+    z-index: 3;
+    height: 65vh;
+    min-height: 50vh;
+    max-height: 65vh;
+    border-radius: 25px;
+    box-shadow: 0px 10px 45px #32a98d;
+    animation-name: edit-container-animation;
+    animation-duration: 750ms;
+}
+
+textarea {
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 25px;
+    min-height: 25vh;
+    max-height: 25vh;
+    background-color: transparent;
+    padding: 5px;
+    color: whitesmoke;
+
+}
+
+
+@keyframes edit-container-animation {
+    from {
+        width: 20%;
+        min-height: 0;
+        height: 0;
+        left: 30%
+    }
+
+    to {
+        width: 90%;
+        min-height: 65vh;
+        height: 65vh;
+        left: 5%
+    }
+}
+
+.new-icon {
+    cursor: pointer;
+    background: transparent;
+    z-index: 1;
+    animation-name: new-icon-animation;
+    animation-duration: 750ms;
+    border-radius: 100%;
+    transition-duration: 0.2s;
+}
+
+.new-icon:hover {
+    box-shadow: 0px 10px 40px #81b3c9;
+}
+
+.add-container {
+    position: absolute;
+    width: 90%;
+    top: 15%;
+    left: 5%;
+    z-index: 3;
+    min-height: 65vh;
+    max-height: 65vh;
+    border-radius: 25px;
+    box-shadow: 0px 10px 45px #32a98d;
+    animation-name: add-container-animation;
+    animation-duration: 750ms;
+}
+
+textarea {
+    border: 2px solid black;
+    width: 100%;
+    border-radius: 25px;
+    min-height: 25vh;
+    max-height: 25vh;
+    background-color: transparent;
+    padding: 5px;
+    color: whitesmoke;
+
+}
+
+
+@keyframes add-container-animation {
+    from {
+        width: 20%;
+        min-height: 0;
+        height: 0;
+        left: 30%
+    }
+
+    to {
+        width: 90%;
+        min-height: 65vh;
+        height: 65vh;
+        left: 5%
+    }
+}
